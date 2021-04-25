@@ -22,7 +22,7 @@ function App() {
         state.push(`M ${x} ${y} `);
         break;
       case "move":
-        state.push(`l ${x} ${y} `);
+        state.push(`L ${x} ${y} `);
         break;
       case "moveend":
         state.push(`M ${x} ${y} `);
@@ -133,7 +133,15 @@ function App() {
           onMouseMove={handleMouseMove}
           onMouseUp={handleMouseUp}
         >
-          <path d={moves.join(" ")}></path>
+          {moves.map((move) => {
+            const [t, x, y] = move.split(" ");
+            return <rect x={x} y={y} height={10} width={10} fill="blue" />;
+          })}
+          {moves.map((move) => {
+            const [t, x, y] = move.split(" ");
+            return <circle cx={x} cy={y} r={5} fill="orange" />;
+          })}
+          <path d={moves.join(" ")} fill="red" />
         </svg>
       </main>
     </div>
