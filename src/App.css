@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 10vmin;
+  pointer-events: none;
+}
+.App-header {
+  display: inline-flex;
+}
+.App-header > h2 {
+  display: inline-block;
+}
