@@ -1,6 +1,6 @@
 # Svigma
 
-This project was created based on a idea i got from seeing a small clip in fireship video. Explain SVG under 100 seconds.
+This project was created based on an idea i got from seeing a small clip in fireship video. Explain SVG under 100 seconds.
 
 I had a issue earlier that is to draw lines polygons rectanges and circles in a ReactJs application.
 
